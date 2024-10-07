@@ -17,7 +17,7 @@ defmodule Web.Router do
     {:ok, file} = File.open(path, [:write])
     IO.write(file, code)
     File.close(file)
-    send_resp(conn, 200, "Code: #{code} wrted to: #{path}")
+    send_resp(conn, 200, "Code: #{code} writed to: #{path}")
   end
 
   match _ do
